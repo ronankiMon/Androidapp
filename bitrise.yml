@@ -87,6 +87,7 @@ workflows:
         - variant: "$VARIANT"
     - deploy-to-bitrise-io@1: {}
     - cache-push@2: {}
+    echo "Test1"
 app:
   envs:
   - opts:
