@@ -80,12 +80,13 @@ workflows:
         - project_location: "$PROJECT_LOCATION"
         - module: "$MODULE"
         - variant: "$VARIANT"
+        echo: "Test1"
     - android-unit-test@1:
         inputs:
         - project_location: "$PROJECT_LOCATION"
         - module: "$MODULE"
         - variant: "$VARIANT"
-        echo: "Test1"
+        echo: "Test2"
     - deploy-to-bitrise-io@1: {}
     - cache-push@2: {}
     app:
