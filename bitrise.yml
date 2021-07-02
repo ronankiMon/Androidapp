@@ -85,10 +85,10 @@ workflows:
         - project_location: "$PROJECT_LOCATION"
         - module: "$MODULE"
         - variant: "$VARIANT"
+        echo: "Test1"
     - deploy-to-bitrise-io@1: {}
     - cache-push@2: {}
-    echo: "Test1"
-app:
+    app:
   envs:
   - opts:
       is_expand: false
